@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <h2>Foodie</h2>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="cart.html">Cart</a>
+    </div>
+</nav>
+
+<h1 class="menu-title">Checkout</h1>
+
+<div class="checkout-box">
+
+    <h2>Delivery Details</h2>
+
+    <form onsubmit="return placeOrder()">
+
+        <input type="text" id="name" placeholder="Full Name">
+
+        <input type="text" id="phone" placeholder="Phone Number (10 digits)" pattern="[0-9]{10}" maxlength="10">
+
+        <textarea id="address" placeholder="Full Address"></textarea>
+
+        <h3>Payment Method</h3>
+
+        <label><input type="radio" name="payment" checked> Cash on Delivery</label><br>
+        <label><input type="radio" name="payment"> UPI</label><br>
+        <label><input type="radio" name="payment"> Card</label><br>
+
+        <button type="submit">Place Order</button>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

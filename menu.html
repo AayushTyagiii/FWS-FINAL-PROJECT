@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <h2>Foodie</h2>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </div>
+</nav>
+
+<h1 class="menu-title">Our Menu</h1>
+
+
+
+<div class="items">
+
+    <div class="card item fries">
+        <img src="photos/cheesyfries.jpg">
+        <h3>Cheesy Fries</h3>
+        <p>₹120</p>
+        <button onclick="addToCart('Cheesy Fries',120)">Add to Cart</button>
+    </div>
+
+    <div class="card item fries">
+        <img src="photos/MoroccanFries.jpg">
+        <h3>Moroccan Fries</h3>
+        <p>₹140</p>
+        <button onclick="addToCart('Moroccan Fries',140)">Add to Cart</button>
+    </div>
+
+    <div class="card item fries">
+        <img src="photos/SuperYumFries.jpg">
+        <h3>Super Yum Fries</h3>
+        <p>₹150</p>
+        <button onclick="addToCart('Super Yum Fries',150)">Add to Cart</button>
+    </div>
+
+    <div class="card item burger">
+        <img src="photos/ClassicBurger.jpg">
+        <h3>Classic Burger</h3>
+        <p>₹120</p>
+        <button onclick="addToCart('Classic Burger',120)">Add to Cart</button>
+    </div>
+
+    <div class="card item burger">
+        <img src="photos/CheeseBurstBurger.jpg">
+        <h3>Cheese Burst Burger</h3>
+        <p>₹160</p>
+        <button onclick="addToCart('Cheese Burst Burger',160)">Add to Cart</button>
+    </div>
+
+    <div class="card item burger">
+        <img src="photos/DoublePattyBurger.jpg">
+        <h3>Double Patty Burger</h3>
+        <p>₹180</p>
+        <button onclick="addToCart('Double Patty Burger',180)">Add to Cart</button>
+    </div>
+
+    <div class="card item pizza">
+        <img src="photos/MargheritaPizza.jpg">
+        <h3>Margherita Pizza</h3>
+        <p>₹200</p>
+        <button onclick="addToCart('Margherita Pizza',200)">Add to Cart</button>
+    </div>
+
+    <div class="card item pizza">
+        <img src="photos/FarmhousePizza.jpg">
+        <h3>Farmhouse Pizza</h3>
+        <p>₹250</p>
+        <button onclick="addToCart('Farmhouse Pizza',250)">Add to Cart</button>
+    </div>
+
+    <div class="card item pizza">
+        <img src="photos/CheeseBurstPizza.jpg">
+        <h3>Cheese Burst Pizza</h3>
+        <p>₹280</p>
+        <button onclick="addToCart('Cheese Burst Pizza',280)">Add to Cart</button>
+    </div>
+
+    <div class="card item drinks">
+        <img src="photos/coke.jpg">
+        <h3>Coke</h3>
+        <p>₹50</p>
+        <button onclick="addToCart('Coke',50)">Add to Cart</button>
+    </div>
+
+    <div class="card item drinks">
+        <img src="photos/coldcoffee.jpg">
+        <h3>Cold Coffee</h3>
+        <p>₹90</p>
+        <button onclick="addToCart('Cold Coffee',90)">Add to Cart</button>
+    </div>
+
+    <div class="card item drinks">
+        <img src="photos/ChocolateShake.jpg">
+        <h3>Chocolate Shake</h3>
+        <p>₹110</p>
+        <button onclick="addToCart('Chocolate Shake',110)">Add to Cart</button>
+    </div>
+
+    <div class="card item combo">
+        <img src="photos/burgercombo.jpg">
+        <h3>Burger Combo</h3>
+        <p>Burger + Fries + Coke</p>
+        <p>₹220</p>
+        <button onclick="addToCart('Burger Combo',220)">Add to Cart</button>
+    </div>
+
+    <div class="card item combo">
+        <img src="photos/pizzacombo.jpg">
+        <h3>Pizza Combo</h3>
+        <p>Pizza + Drink + Fries</p>
+        <p>₹300</p>
+        <button onclick="addToCart('Pizza Combo',300)">Add to Cart</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
